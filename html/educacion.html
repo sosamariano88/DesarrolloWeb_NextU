@@ -37,36 +37,49 @@
         <table id="estudios" border="1">
           <thead>
             <tr>
-              <th>A&ntilde;o</th>
-              <th>Instituci&oacute;n</th>
-              <th>Lugar</th>
-              <th>¿Culmin&oacute;?</th>
+              <th colspan="2">A&ntilde;o</th>
+              <th rowspan="2">Instituci&oacute;n</th>
+              <th rowspan="2">T&iacute;tulo</th>
+              <th rowspan="2">Lugar</th>
+              <th rowspan="2">¿Culmin&oacute;?</th>
+            </tr>
+            <tr>
+              <th>Inicio</th>
+              <th>Finalizo</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1996-2002</td>
-              <td>Escuela de Aplicaci&oacute;n Monte Maria</td>
-              <td>Guatemala</td>
-              <td>S&iacute;</td>
-            </tr>
-            <tr>
-              <td>2003-2005</td>
-              <td>Instituto Nacional de Educaci&oacute;n B&aacute;sica VL I</td>
-              <td>Guatemala</td>
-              <td>S&iacute;</td>
-            </tr>
-            <tr>
-              <td>2006-2008</td>
-              <td>Escuela Nacional de Ciencias Comerciales No. 5</td>
-              <td>Guatemala</td>
-              <td>S&iacute;</td>
-            </tr>
-            <tr>
-              <td>2017-2019</td>
+              <td>2017</td>
+              <td>----</td>
               <td>Universidad Galielo</td>
+              <td>Licenciatura en Informatica y Administraci&oacute;n en Telecomunicaciones</td>
               <td>Guatemala</td>
               <td>Cursando</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>2008</td>
+              <td>Escuela Nacional de Ciencias Comerciales No. 5</td>
+              <td>Perito Contador</td>
+              <td>Guatemala</td>
+              <td>S&iacute;</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>2005</td>
+              <td>Instituto Nacional de Educaci&oacute;n B&aacute;sica VL I</td>
+              <td>Nivel B&aacute;sico</td>
+              <td>Guatemala</td>
+              <td>S&iacute;</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>2002</td>
+              <td>Escuela de Aplicaci&oacute;n Monte Maria</td>
+              <td>Nivel Primario</td>
+              <td>Guatemala</td>
+              <td>S&iacute;</td>
             </tr>
           </tbody>
         </table>
@@ -78,8 +91,45 @@
           <fieldset>
             <legend><h3>Agregar Educaci&oacute;n</h3></legend>
             <p>
-              <label for="a&ntiled;o"><strong>A&ntilde;o: </strong></label>
-              <select id="a&ntilde;o">
+              <label for="a&ntiled;o_inicio"><strong>A&ntilde;o de Inicio: </strong></label>
+              <select id="a&ntilde;o_inicio">
+                <option>----</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select>
+            </p>
+            <p>
+              <label for="a&ntiled;o_fin"><strong>A&ntilde;o de Finalizaci&oacute;n: </strong></label>
+              <select id="a&ntilde;o_fin">
+                <option>----</option>
                 <option>1990</option>
                 <option>1991</option>
                 <option>1992</option>
@@ -117,13 +167,18 @@
               <input type="text" id="institucion" name="institucion" required placeholder="Centro Educativo">
             </p>
             <p>
+              <label for="titulo"><strong>T&iacute;tulo: </strong></label>
+              <input type="text" id="titulo" name="titulo" required placeholder="T&iacute;tulo obtenido">
+            </p>
+            <p>
               <label for="lugar"><strong>Lugar: </strong></label>
               <input type="text" id="lugar" name="lugar" required placeholder="Pais o Ciudad">
             </p>
             <p>
-              <label for="culminado"><strong>¿Culm&iacute;no? </strong></label>
+              <label for="culminado"><strong>¿Culmin&oacute;? </strong></label>
               <input type="radio" id="culminado" name="culminado">S&iacute;
               <input type="radio" id="culminado" name="culminado">No
+              <input type="radio" id="culminado" name="culminado">Cursando
             </p>
             <input type="submit" name="Agregar" value="Agregar">
             <input type="reset" name="Limpiar" value="Limpiar">
