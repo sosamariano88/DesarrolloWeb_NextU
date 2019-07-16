@@ -1,4 +1,4 @@
 # DesarrolloWeb_NextU
 Trabajos NextU DW
 
-23/06/2019 - Inicio de archivo index.
+Este trabajo esta orientado a la maquetación de una página web, de acuerdo a lo aprendido durante el primer modulo de Desarrollo Web en Next U.
